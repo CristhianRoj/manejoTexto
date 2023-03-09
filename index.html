@@ -5,9 +5,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+        table th, table td{
+            border: 1px solid blueviolet;
+        }
+
+		tfoot{
+			background-color: aquamarine;
+		}
+
+		thead{
+			background-color: blueviolet;
+		}
+    </style>
 </head>
 <body>
-	<h1>GIT ES COMPLICADO</h1>
+	<h1>MANEJO DE TEXTO</h1>
+
+	<H2>IR A LA PARTE DE LAS TABLAS CON EL ENLACE DE ABAJO</H2>
+	<P><a href="#tablas">Ir al contenido de la clase de hoy</a></P>
+
 	<h2>Titulo</h2>
 	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ullam excepturi ab veniam quos dolore expedita quas non facere? Obcaecati iste adipisci cupiditate sapiente accusamus dolores tempore, explicabo est expedita!</p>
 	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ullam excepturi ab veniam quos dolore expedita quas non facere? Obcaecati iste adipisci cupiditate sapiente accusamus dolores tempore, explicabo est expedita!</p>
@@ -48,5 +65,144 @@
 	<h1>sub</h1>
 	<p>hola <sub>juan</sub></p>
 
+	<h1>strong</h1>
+	<p>la regla mas importante, ,la regla que no ves olvidar en tu vida <strong>nunca le des comida</strong></p>
+
+	<h1>em</h1>
+	<p><em>A mi</em> me gustan tus pinturas</p>
+	<p>A mi me gustan <em>tus</em> pintruas</p>
+	<!-- cuando tiene que haber empfasis etnoes tenemoqe usar em  -->
+
+	<h1>mark</h1>
+	<!-- Esto es como remarcar en un libro seria -->
+	<p>Socrate se hacia el lignorante, es dicir, aparentaba ser mas tonto de lo que era. Esto lo llamabamos <mark>ironia soratica</mark></p>
+
+	<h1>q (cita en linea)</h1>
+	<p>Y la reina respondio: <q>que coman pasteles</q></p>
+	<!-- esta etiqueta tiene un atributo que nos permite poner la fuente de la cita -->
+
+	<h1>blockquote</h1>
+	<blockquote>
+		and even know he loved her 
+		kissed her missed her 
+		he knew deep down...
+		she wasn't his
+	</blockquote>
+
+	<h1>cite</h1>
+	<p>esta etiqueta sirve para nombrar libros trabajos y demas</p>
+	<p>el mejor libro que he leido en mi vida <cite>El imperio Final</cite></p>
+
+	<h1>dfn</h1>
+	<p>esta etiqueta es para las definiciones de terminos </p>
+	<p>Un <dfn>potenciometreo</dfn> es un sensor que se encarga de medir algo</p>
+
+	<h1>abbr</h1>
+	<p>esta es una abrebiatura: <abbr title="tu patron">tp </abbr></p>
+
+	<h1>small</h1>
+	<p>achica el texto. esa es la letra chica la que nadie lee</p>
+	<p><small>el usuario es responsable por la informacioon compartida en la red social</small></p>
+
+
+	<table id="tablas">
+		<caption>este es el titulo de la tabla</caption>
+		<thead>
+			<tr>
+				<th scope = "col" colspan="1" rowspan="2">nombre</th>
+                <th scope = "col">apellido</th>
+                <th scope="col">edadd</th>
+			</tr>
+		</thead>
+		<tbody>
+            <tr>
+                <td>jose</td>
+                <td>marinchovich</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>pero</td>
+                <td>21</td>
+            </tr>
+
+            
+            <!-- bueno en esta parte haremos lo de personalizar la filas dobles y las columnas que ocupan mas de un espacion -->
+            <!-- bueno esta parte esta arriba entonces  -->
+            <tr>
+                <td colspan="3">todos los de arriban son god</td>
+            </tr>
+		</tbody>
+		<tfoot>
+		</tfoot>
+	</table>
+
+
+    <h1>tabla de encarrgo</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th  colspan="2">A</th>
+                <th colspan="2">D</th>
+            </tr>            
+            <tr>
+                <th>B</th>
+                <th>C</th> 
+                <th>E</th>
+                <th>F</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1" rowspan="2">D1</td>
+                <td>D2</td>
+                <td rowspan="2">D4</td>
+                <td>D5</td>
+                <!-- <td rowspan="1">D2</td> -->
+            </tr>
+            <tr>
+                <td>D3</td>
+                <td>D6</td>
+            </tr>
+
+            <tr>
+                <td colspan="1" rowspan="2">D7</td>
+                <td>D8</td>
+                <td rowspan="2">D10</td>
+                <td>D11</td>
+                <!-- <td rowspan="1">D2</td> -->
+            </tr>
+            <tr>
+                <td>D9</td>
+                <td>D12</td>
+            </tr>
+
+        </tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3"> total</td>
+				<td>9000</td>
+			</tr>
+		</tfoot>
+    </table>
+
+
+	<H1>enlaces</H1>
+	<a href="contacto.html">da un click para contactarme</a>
+	<a href="test.html" target="_blank">en otra pestania </a>
+
+	<a href="#joselito">ir a el ultimo parrafo </a>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur, culpa fugiat perferendis fuga consequatur minima, explicabo, quidem provident pariatur porro illum enim dolores exercitationem amet omnis velit repellat cupiditate. joselito</p>
+	<p id="joselito">	ulitmo parrafo</p>
+
+	<p><a href="mailto:joselito@ucb.edu.bo">eso se viene</a></p>
 </body>
 </html>
